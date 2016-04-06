@@ -28,7 +28,7 @@ public class MyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_main);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -63,10 +63,10 @@ public class MyActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startCompass(View view) {
+   public void startCompass(View view) {
         Intent intent = new Intent(this, Compass.class);
         startActivity(intent);
-    }
+   }
 
 
 }

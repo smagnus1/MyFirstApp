@@ -16,6 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity
+            android:name=".MyActivity"
+            android:label="MyActivity"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        </activity>
+
 
         <activity
             android:name=".AccValues"
