@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 
 
-public class AccValues extends MyActivity implements SensorEventListener {
+public class AccValues extends Activity implements SensorEventListener {
     private SensorManager senSensorManager;
     private Sensor senAccelerometer;
     private boolean startValues;
@@ -41,8 +41,18 @@ public class AccValues extends MyActivity implements SensorEventListener {
         senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
     //@Override
-    public void onSensorChange(SensorEvent sensorEvent) {
+    public void onSensorChanged(SensorEvent sensorEvent) {
         Sensor mySensor = sensorEvent.sensor;
 
 
