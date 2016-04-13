@@ -25,6 +25,7 @@
                 android:text="X"
                 android:textSize="10pt" />
 
+
             <TextView
                 android:id="@+id/x_axis"
                 android:layout_width="wrap_content"

@@ -22,7 +22,7 @@ import com.example.magnus.myfirstapp.MyActivity;
 import com.example.magnus.myfirstapp.R;
 
 
-public class MyActivity extends AppCompatActivity {
+public class MyActivity extends Activity {
 
 
     @Override
@@ -32,8 +32,8 @@ public class MyActivity extends AppCompatActivity {
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Test");
+        //setSupportActionBar(toolbar);
+       // getSupportActionBar().setTitle("Test");
     }
 
     @Override
